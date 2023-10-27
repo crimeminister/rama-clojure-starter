@@ -1,0 +1,37 @@
+{:mvn/repos {"releases" {:url "https://nexus.redplanetlabs.com/repository/maven-public-releases"}}
+
+ :paths ["src"]
+
+ :deps {com.rpl/rama-helpers {:mvn/version "0.9.3"}}
+
+ :aliases {:dev {:extra-paths ["test"]
+                 :resource-paths ["test/resources/"]
+                 ;; Necessary for development, but provided when deployed.
+                 :extra-deps {com.rpl/rama {:mvn/version "0.10.1"}}}
+
+           ;; Aliases for running the various examples. Each invocation
+           ;; should include the :dev alias:
+           ;;
+           ;; $ clj -M:dev:example/foo
+
+           :examples/auction
+           {:main-opts ["-m" "rama-clojure-starter.examples.auction"]}
+           :examples/word-count
+           {:main-opts ["-m" "rama-clojure-starter.examples.word-count"]}
+           :examples/paths.filtered-list
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.filtered-list-module"]}
+           :examples/paths.list-virtual-values
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.list-virtual-values-module"]}
+           :examples/paths.map-key
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.map-key-module"]}
+           :examples/paths.multi-arity-term
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.multi-arity-term-module"]}
+           :examples/paths.set-virtual-values
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.set-virtual-values-module"]}
+           :examples/paths.sub-list
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.sub-list-module"]}
+           :examples/paths.subselect
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.subselect-module"]}
+           :examples/paths.term-void
+           {:main-opts ["-m" "rama-clojure-starter.examples.paths.term-void-module"]}
+           }}
