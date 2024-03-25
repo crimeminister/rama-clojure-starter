@@ -16,6 +16,8 @@
 
            :examples/auction
            {:main-opts ["-m" "rama-clojure-starter.examples.auction"]}
+           :examples/depots.basic
+           {:main-opts ["-m" "rama-clojure-starter.examples.depots.basic"]}
            :examples/word-count
            {:main-opts ["-m" "rama-clojure-starter.examples.word-count"]}
            :examples/paths.filtered-list
