@@ -30,6 +30,9 @@
      ;; local-transform>, which transforms the PState partition on current
      ;; task with the given path. Transform path must use term, termval,
      ;; or NONE> at leaves.
+     ;;
+     ;; Note that the pstate is hashed by the output of first, so
+     ;; profiles will be partitioned by user-id automatically.
      (local-transform> [(keypath *user-id *field) (termval *value)]
                        $$profiles))))
 
