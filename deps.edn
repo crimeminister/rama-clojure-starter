@@ -22,6 +22,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.basic"]}
            :examples/depots.custom
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.custom"]}
+           :examples/depots.good
+           {:main-opts ["-m" "rama-clojure-starter.examples.depots.profile-good"]}
            :examples/word-count
            {:main-opts ["-m" "rama-clojure-starter.examples.word-count"]}
            :examples/paths.filtered-list
