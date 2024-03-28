@@ -55,4 +55,6 @@
            ;; PStates
            :examples/pstates.basic-reactive
            {:main-opts ["-m" "rama-clojure-starter.examples.pstates.basic-reactive"]}
+           :examples/pstates.callback-reactive
+           {:main-opts ["-m" "rama-clojure-starter.examples.pstates.callback-reactive"]}
            }}
