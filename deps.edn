@@ -14,8 +14,13 @@
            ;;
            ;; $ clj -M:dev:example/foo
 
+           ;; Standalone
            :examples/auction
            {:main-opts ["-m" "rama-clojure-starter.examples.auction"]}
+           :examples/word-count
+           {:main-opts ["-m" "rama-clojure-starter.examples.word-count"]}
+
+           ;; Depots
            :examples/depots.append
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.append"]}
            :examples/depots.basic
@@ -28,8 +33,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.profile-good"]}
            :examples/depots.tick
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.tick"]}
-           :examples/word-count
-           {:main-opts ["-m" "rama-clojure-starter.examples.word-count"]}
+
+           ;; Paths
            :examples/paths.filtered-list
            {:main-opts ["-m" "rama-clojure-starter.examples.paths.filtered-list-module"]}
            :examples/paths.list-virtual-values
@@ -46,4 +51,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.paths.subselect-module"]}
            :examples/paths.term-void
            {:main-opts ["-m" "rama-clojure-starter.examples.paths.term-void-module"]}
+
+           ;; PStates
+           :examples/pstates.basic-reactive
+           {:main-opts ["-m" "rama-clojure-starter.examples.pstates.basic-reactive"]}
            }}
