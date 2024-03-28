@@ -59,6 +59,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.pstates.callback-reactive"]}
            :examples/pstates.client-select
            {:main-opts ["-m" "rama-clojure-starter.examples.pstates.client-select"]}
+           :examples/pstates.diff
+           {:main-opts ["-m" "rama-clojure-starter.examples.pstates.diff"]}
            :examples/pstates.partition
            {:main-opts ["-m" "rama-clojure-starter.examples.pstates.partition"]}
            }}
