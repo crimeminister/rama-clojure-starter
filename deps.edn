@@ -65,4 +65,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.pstates.multi"]}
            :examples/pstates.partition
            {:main-opts ["-m" "rama-clojure-starter.examples.pstates.partition"]}
+
+           ;; Queries
+           :examples/query.simple
+           {:main-opts ["-m" "rama-clojure-starter.examples.query.simple"]}
            }}
