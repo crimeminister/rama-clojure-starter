@@ -21,10 +21,9 @@
   (batch<- [*count]
            ;; Move to the partition where the *url is kept.
            (|hash *url)
-           ;; Emit a set containing user IDs of users that follow the
-           ;; given URL. This is done using local-select> which queries
-           ;; the PState partition on the current task using provided
-           ;; path.
+           ;; Emit the user IDs of users that follow the given URL. This
+           ;; is done using local-select> which queries the PState
+           ;; partition on the current task using provided path.
            (local-select> [(keypath *url) ALL] $$url-to-users :> *user-id)
            ;; Queries the PState using the given path, changing
            ;; partitions based on the path. Emits each follower user ID.
