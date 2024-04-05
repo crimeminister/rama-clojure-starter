@@ -73,4 +73,6 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.query.fibonacci"]}
            :examples/query.reach
            {:main-opts ["-m" "rama-clojure-starter.examples.query.reach"]}
+           :examples/query.state
+           {:main-opts ["-m" "rama-clojure-starter.examples.query.state"]}
            }}
