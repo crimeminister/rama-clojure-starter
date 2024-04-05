@@ -75,4 +75,6 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.query.reach"]}
            :examples/query.state
            {:main-opts ["-m" "rama-clojure-starter.examples.query.state"]}
+           :examples/query.colocated
+           {:main-opts ["-m" "rama-clojure-starter.examples.query.colocated"]}
            }}
