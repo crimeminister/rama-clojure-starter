@@ -34,6 +34,10 @@
            :examples/depots.tick
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.tick"]}
 
+           ;; Integrating
+           :examples/integrating.global
+           {:main-opts ["-m" "rama-clojure-starter.examples.integrating.global"]}
+
            ;; Paths
            :examples/paths.filtered-list
            {:main-opts ["-m" "rama-clojure-starter.examples.paths.filtered-list-module"]}
