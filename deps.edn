@@ -39,6 +39,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.integrating.global"]}
            :examples/integrating.async
            {:main-opts ["-m" "rama-clojure-starter.examples.integrating.async"]}
+           :examples/integrating.specialized
+           {:main-opts ["-m" "rama-clojure-starter.examples.integrating.specialized"]}
 
            ;; Paths
            :examples/paths.filtered-list
