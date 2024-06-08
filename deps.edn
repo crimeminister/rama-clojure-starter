@@ -7,7 +7,7 @@
  :aliases {:dev {:extra-paths ["test"]
                  :resource-paths ["test/resources/"]
                  ;; Necessary for development, but provided when deployed.
-                 :extra-deps {com.rpl/rama {:mvn/version "0.12.1"}}}
+                 :extra-deps {com.rpl/rama {:mvn/version "0.16.1"}}}
 
            ;; Aliases for running the various examples. Each invocation
            ;; should include the :dev alias:
