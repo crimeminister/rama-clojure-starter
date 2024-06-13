@@ -34,6 +34,14 @@
            :examples/depots.tick
            {:main-opts ["-m" "rama-clojure-starter.examples.depots.tick"]}
 
+           ;; Integrating
+           :examples/integrating.global
+           {:main-opts ["-m" "rama-clojure-starter.examples.integrating.global"]}
+           :examples/integrating.async
+           {:main-opts ["-m" "rama-clojure-starter.examples.integrating.async"]}
+           :examples/integrating.specialized
+           {:main-opts ["-m" "rama-clojure-starter.examples.integrating.specialized"]}
+
            ;; Paths
            :examples/paths.filtered-list
            {:main-opts ["-m" "rama-clojure-starter.examples.paths.filtered-list-module"]}
@@ -73,4 +81,8 @@
            {:main-opts ["-m" "rama-clojure-starter.examples.query.fibonacci"]}
            :examples/query.reach
            {:main-opts ["-m" "rama-clojure-starter.examples.query.reach"]}
+           :examples/query.state
+           {:main-opts ["-m" "rama-clojure-starter.examples.query.state"]}
+           :examples/query.colocated
+           {:main-opts ["-m" "rama-clojure-starter.examples.query.colocated"]}
            }}
