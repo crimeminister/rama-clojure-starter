@@ -20,6 +20,8 @@
 (definterface SpecialTask
   (^long getSpecialId []))
 
+;; Note that fields in a deftype are immutable by default; marking them as ^:volatile-mutable marks
+;; them as private so they can only be accessed by type methods.
 (deftype MyTaskGlobal [v ^:volatile-mutable special]
   ;; If the provided object implements TaskGlobalObject, each instance
   ;; will be specialized on each task.
